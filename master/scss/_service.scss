@@ -1,0 +1,95 @@
+.service_area{
+    padding-bottom: 120px;
+    &.add_padding{
+        padding-top: 120px;
+        padding-bottom: 40px;
+    }
+    @media #{$mobile_device} {
+        padding-bottom: 40px;
+    }
+    @media #{tablet_device} {
+        padding-bottom: 50px;
+    }
+    .pattern_img {
+        position: absolute;
+        right: 0;
+        top: -135px;
+        right: -74px;
+        @media #{$large_device} {
+            right: -20px;
+        }
+    }
+    .single_service{
+        margin-bottom: 60px;
+        .thumb{
+            overflow: hidden;
+            img{
+                @include transform(scale(1));
+                @include transition(.3s);
+            }
+        }  
+        .service_info{
+            padding-top: 30px;
+            a{
+                h3{
+                    font-size: 22px;
+                    font-weight: 600;
+                    color: #040E27;
+                    text-transform: capitalize;
+                    @include transition(.3s);
+                }
+            }
+            p{
+                font-size: 16px;
+                line-height: 28px;
+                color: #596672;
+                margin-bottom: 11px;
+                margin-top: 10px;
+            }
+            a{
+                color: #F0542C;
+                font-size:16px ;
+                i{
+                    font-size: 12px;
+                    padding-left: 5px;
+                    top: 2px;
+                    position: relative;
+                }
+            }
+        }
+        &:hover{
+            .service_info{
+                a{
+                    h3{
+                        color: #F0542C;
+                    }
+                }
+            }
+            .thumb{
+                img{
+                    @include transform(scale(1.07));
+                }
+            } 
+        }
+    }
+    .owl-carousel .owl-nav div {
+        line-height: 40px;
+        width: 40px;
+        height: 40px;
+        left: -20px;
+        background: #fff;
+        border: none;
+        color: #F0542C;
+        font-size: 15px;
+        top: 30%;
+        &.owl-next{
+            right: -20px;
+            left: auto;
+        }
+        &:hover{
+            background: #F0542C;
+            color: #fff;
+            border: none;
+        }
+    }
+}

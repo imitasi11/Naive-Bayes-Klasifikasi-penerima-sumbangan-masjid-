@@ -1,0 +1,122 @@
+.gallery_area{
+    &.add_padding{
+        padding-top: 120px;
+        @media #{$mobile_device} {
+            padding-top: 50px;
+        }
+        @media #{$tablet_device} {
+            padding-top: 50px;
+        }
+    }
+    .gallery_title{
+        font-size: 42px;
+        font-weight: 600;
+        color: #040E27;
+        line-height: 52px;
+        @media #{$tablet_device} {
+            font-size: 25px;
+            line-height: 35px;
+        }
+    }
+    .gallery_nav{
+        margin-bottom: 40px;
+    }
+    .portfolio-menu{
+        text-align: right;
+        @media #{$mobile_device}{
+            text-align: left;
+            margin-top: 20px;
+        }
+        button{
+            background: none;
+            color: #596672;
+            font-size: 14px;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            margin-left: 25px;
+            @include transition(.3s);
+            @media #{$mobile_device}{
+                margin-left: 0;
+                margin-right: 8px;
+            }
+            @media #{$mid_device}{
+                margin-left: 0;
+                margin-right: 8px;
+            }
+            &.active{
+                color: #F0542C;
+            }
+        }
+    }
+    .single_gallery{
+        position: relative;
+        .thumb{
+            overflow: hidden;
+            img{
+                width: 100%;
+                @include transform(scale(1));
+                @include transition(.3s);
+            }
+        }
+        .gallery_hover{
+            background: #fff;
+            position: absolute;
+            left: 25px;
+            right: 25px;
+            bottom: 20px;
+            padding:24px 20px;
+            @include border-radius(5px);
+            @include transform(translateY(50px));
+            @include transition(.3s);
+            opacity: 0;
+            .hover_inner{
+                h3{
+                  font-size: 20px;  
+                  color: #040E27;
+                  font-weight: 500;
+                  margin-bottom: 0;
+                }
+                .icon{
+                    a{
+                        display: inline-block;
+                        width: 36px;
+                        height: 36px;
+                        background: #F0542C;
+                        color: #fff;
+                        @include border-radius(50%);
+                        text-align: center;
+                        line-height: 36px;
+                    }
+                }
+            }
+        }
+        &:hover{
+            .gallery_hover{
+                @include transform(translateY(0px));
+                opacity: 1;
+            }
+            .thumb{
+                img{
+                    width: 100%;
+                    @include transform(scale(1.1));
+                }
+            }
+        }
+    }
+}
+
+.more_pro_btn{
+    display: block;
+    padding: 31px 0;
+    font-weight: 500;
+    font-size: 24px;
+    background: #F0542C;
+    color: #fff;
+    text-align: center;
+    display: block;
+    &:hover{
+        color: #fff;
+    }
+}

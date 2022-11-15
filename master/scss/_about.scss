@@ -1,0 +1,83 @@
+.about_area{
+    padding-top: 90px;
+    padding-bottom: 100px;
+    @media #{$mobile_device} {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    &.add_padding{
+        padding-top: 250px;
+        margin-bottom: 40px;
+        @media #{$mobile_device} {
+            padding-top: 100px;
+            
+        }
+        @media #{$tablet_device} {
+            padding-top: 100px;
+        }
+    }
+    .about_thumb{
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 1;
+        .pattern_img{
+            position: absolute;
+            top: -50px;
+            left: -118px;
+            z-index: -1;
+            @media #{$large_device} {
+               left: -20px;
+            }
+            @media #{$tablet_device} {
+               left: -20px;
+            }
+        }
+        img{
+            width: 100%;
+            box-shadow: 0 0 20px #ddd;;
+        }
+    }
+    .about_info{
+        padding-left: 68px;
+        margin-bottom: 30px;
+        @media #{$mobile_device} {
+            padding-left: 0;
+        }
+        @media #{$tablet_device} {
+            padding-left: 0;
+        }
+        h3{
+            font-size: 42px;
+            font-weight: 600;
+            color: #040E27;
+            line-height: 52px;
+            @media #{$tablet_device} {
+                font-size: 34px;
+                font-weight: 600;
+                color:#040E27;
+                line-height: 45px;
+            }
+            @media #{$mid_device} {
+                font-size: 38px;
+            }
+        }
+        p{
+            color: #596672;
+            &.first_para{
+                font-size: 20px;
+                color:#040E27;
+                line-height: 30px;
+                margin-top: 18px;
+                margin-bottom: 10px;
+            }
+        }
+        .boxed-btn3{
+            margin-top: 45px;
+        }
+    }
+    .border_1px{
+        margin-bottom: 30px;
+        border-bottom: 1px solid #EAEAEA;
+        padding-bottom: 40px;
+    }
+}

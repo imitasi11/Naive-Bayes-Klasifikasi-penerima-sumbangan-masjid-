@@ -1,0 +1,427 @@
+.header-area{
+    // position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+    position: absolute;
+    // padding-top: 28px;
+    @media #{$mobile_device} {
+        padding-top: 0;
+    }
+    @media #{$tablet_device} {
+        padding-top: 0;
+    }
+
+    .main-header-area{
+        background: #fff;
+        background: transparent;
+        @media #{$mobile_device} {
+            background: #040E27;
+         }
+        @media #{$tablet_device} {
+            background: #040E27;
+         }
+        .white_bg_bar{
+            background: #fff;
+            @include border-radius(10px);
+            position: relative;
+            margin-top: -35px;
+            padding: 10px 20px;
+            @media #{$mobile_device} {
+               margin-top: 0;
+               background: #040E27;
+               padding: 10px 0;
+            }
+            @media #{$tablet_device} {
+               margin-top: 0;
+               background: #040E27;
+               padding: 10px 0;
+            }
+        }
+        .search_icon a {
+            width: 45px;
+            height: 45px;
+            background: #FFF5F2;
+            display: inline-block;
+            text-align: center;
+            line-height: 45px;
+            border-radius: 50%;
+            color: #F0542C;
+            font-size: 15px;
+        }
+        // padding: 0 150px;
+        // @media #{$mobile_device} {
+        //     padding: 10px 10px;
+        // }
+        // @media #{$tablet_device} {
+        //     padding: 10px 10px;
+        // }
+        // @media #{$mid_device} {
+        //     padding: 0 20px;
+        // }
+        // @media #{$large_device} {
+        //     padding: 0 10px;
+        // }
+
+        .logo-img{
+            text-align: center;
+            @media #{$mobile_device} {
+                // padding-left: 20px;
+                text-align: left;
+            }
+            @media #{$tablet_device} {
+                // padding-left: 20px;
+                text-align: left;
+            }
+            @media #{$mid_device} {
+                // padding-left: 20px;
+                text-align: left;
+            }
+            img{
+                @media #{$mobile_device} {
+                    // padding-left: 20px;
+                    width: 70px;
+                }
+                @media #{$tablet_device} {
+                    // padding-left: 20px;
+                    width: 70px;
+                }
+               
+            }
+        }
+        .Appointment{
+            @include flexbox();
+            @include align-items(center);
+            @include justify-content(flex-end);
+            .search_button{
+                @media #{$mid_device} {
+                    margin-right: 15px;
+                }
+                @media #{$large_device} {
+                    margin-right: 15px;
+                }
+                a{
+                    
+                    i{
+                        color: #E8E8E8;
+                    }
+                }
+            }
+           .socail_links{
+               ul{
+                   li{
+                       display: inline-block;
+
+                       a{
+                        color: #A8A7A0;
+                        margin: 0 10px;
+                        font-size: 15px;
+                        &:hover{
+                            color: #fff;
+                        }
+                       }
+                   }
+               }
+           }
+           .book_btn{
+               margin-left: 30px;
+               @media #{$mid_device} {
+                   margin-left: 0;
+               }
+               @media #{$large_device} {
+                   margin-left: 0;
+               }
+               a{
+                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0181f5+0,5db2ff+100 */
+                background: rgb(1,129,245); /* Old browsers */
+                background: -moz-linear-gradient(left,  rgba(1,129,245,1) 0%, rgba(93,178,255,1) 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(left,  rgba(1,129,245,1) 0%,rgba(93,178,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to right,  rgba(1,129,245,1) 0%,rgba(93,178,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0181f5', endColorstr='#5db2ff',GradientType=1 ); /* IE6-9 */
+
+                padding: 13px 26px;
+                font-size: 14px;
+                font-weight: 400;
+                border: 1px solid transparent;
+                color: #fff;
+                @include border-radius(30px);
+                @media #{$mid_device} {
+                    padding: 12px 20px;
+                }
+                &:hover{
+                    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0181f5+0,5db2ff+100&0.96+0,0.96+100 */
+                    background: -moz-linear-gradient(right,  rgba(1,129,245,0.96) 0%, rgba(93,178,255,0.96) 100%); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(right,  rgba(1,129,245,0.96) 0%,rgba(93,178,255,0.96) 100%); /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(to left,  rgba(1,129,245,0.96) 0%,rgba(93,178,255,0.96) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f50181f5', endColorstr='#f55db2ff',GradientType=0 ); /* IE6-9 */
+                    color: #fff;
+                    border: 1px solid #5DB2FF;
+                }
+               }
+           }
+        }
+        .main-menu{
+            padding: 12px 0;
+            ul{
+                li{
+                    display: inline-block;
+                    position: relative;
+                    margin: 0 10px;
+                    // @media #{$mid_device} {
+                    //     margin-right: 20px;
+                    // }
+                    // @media #{$large_device} {
+                    //     margin-right: 15px;
+                    // }
+                    a{
+                        color: #040E27;
+                        font-size: 14px;
+                        text-transform: capitalize;
+                        font-weight: 500;
+                        display: inline-block;
+                        padding: 0px 0px 0px 0px;
+                        font-family: $font1;
+                        position: relative;
+                        text-transform:capitalize;
+                        
+                        @media #{$mid_device} {
+                            // padding: 41px 0px 10px 0px;
+                            font-size: 15px;
+                        }
+                        @media #{$large_device} {
+                            // padding: 41px 0px 10px 0px;
+                            font-size: 15px;
+                        }
+                        i{
+                            font-size: 9px;
+                            @media #{$mobile_device}{
+                                display: none !important;
+                            }
+                            @media #{$tablet_device}{
+                                display: none !important;;
+                            }
+                        }
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            background: #F0542C;
+                            width: 100%;
+                            height: 3px;
+                            bottom: -24px;
+                            left: 0;
+                            opacity: 0;
+                            transform: scaleX(0);
+                            @include transition(.3s);
+                        }
+                        &:hover::before{
+                            opacity: 1;
+                            transform: scaleX(1);
+                        }
+                        &.active{
+                            &::before{
+                                opacity: 1;
+                                transform: scaleX(1);
+                            }
+                        }
+                        &:hover{
+                            color: #F0542C;
+                        }
+                    }
+                    .submenu {
+                        position: absolute;
+                        left: 0;
+                        top: 160%;
+                        background: #fff;
+                        width: 200px;
+                        z-index: 2;
+                        box-shadow: 0 0  10px rgba(0,0,0,.02);
+                        opacity: 0;
+                        visibility: hidden;
+                        text-align: left;
+                        @include transition(.6s);
+                        li{
+                            display: block;
+                            a{
+                                padding: 10px 15px;
+                                position: inherit;
+                                @include transition(.3s);
+                                display: block;
+                                color: #000;
+                                &::before{
+                                    display: none;
+                                }
+                            }
+                            &:hover a{
+                                color: #000;
+                            }
+                        }
+                    }
+                    &:hover > .submenu{
+                        opacity: 1;
+                        visibility: visible;
+                        top: 198%;
+                    }
+                    &:hover > a::before{
+                        opacity: 1;
+                        transform: scaleX(1);
+                    }
+                    &:first-child a {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+        &.sticky {
+            box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: -70px;
+            left: 0;
+            right: 0;
+            z-index: 990;
+            transform: translateY(70px);
+            transition: transform 500ms ease, background 500ms ease;
+            -webkit-transition: transform 500ms ease, background 500ms ease;
+            box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+            // padding: 10px 150px;
+            background: rgba(255, 255, 255,.96);
+            @media #{$mobile_device} {
+                background: #040E27;
+             }
+            @media #{$tablet_device} {
+                background: #040E27;
+             }
+            // background: #2C2C2C;
+            // padding-bottom: 0;
+            @media #{$mobile_device} {
+                padding: 0px 10px;
+            }
+            @media #{$tablet_device} {
+                // padding: 10px 10px;
+            }
+            @media #{$mid_device} {
+                // padding: 10px 20px;
+            }
+            @media #{$large_device} {
+                // padding: 10px 20px
+            }
+            .white_bg_bar{
+                margin-top: 0px;
+            }
+            .header_bottom_border{
+                border-bottom: none;
+            }
+            .header_bottom_border.white_border {
+                border-bottom: none !important;
+            }
+            ul{
+                li{
+                    a{
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            background: #F0542C;
+                            width: 100%;
+                            height: 3px;
+                            bottom: -24px;
+                            left: 0;
+                            opacity: 0;
+                            transform: scaleX(0);
+                            @include transition(.3s);
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .header-top_area{
+        padding: 0;
+        background: #040E27;
+        .boxed-btn3 {
+            padding: 14px 50px;
+        }
+      .social_media_links{
+          @media #{$mobile_device} {
+              text-align: center;
+          }
+          a{
+            font-size: 15px;
+            color: #C7C7C7;
+            margin-right: 12px;
+            &:hover{
+                color: #5DB2FF;
+            }
+          }
+      }  
+      .header_left{
+          p{
+              color:#FFFFFF ;
+              font-weight: 500;
+              font-size: 14px;;
+              margin-bottom: 0;
+          }
+      }
+      .short_contact_list{
+          text-align: right;
+          @media #{$mobile_device} {
+            text-align: center;
+        }
+          ul{
+              li{
+                  display: inline-block;
+                  a{
+                    font-size: 13px;
+                    color: #919191;
+                    margin-right: 50px;
+                    @media #{$mobile_device} 
+                    {
+                        margin-left: 0;
+                        margin: 0 5px;
+                    }
+                    i{
+                        color: #5DB2FF;
+                        margin-right: 7px;
+                    }
+                  }
+              }
+          }
+      }
+      .header_right.d-flex {
+        display: flex;
+        justify-content: flex-end;
+    }
+    }
+    .address_bar {
+        background: rgba(4, 14, 39,.50);
+        padding-top: 29px;
+        padding-bottom: 64px;
+        .logo{
+
+        }
+        .address_menu{
+            .single_address{
+                margin-left: 80px;
+                .icon{
+                    margin-right: 15px;
+                }
+                .address_info{
+                    h3{
+                        font-size: 13px;
+                        color: #EC7247;
+                        text-transform: uppercase;
+                        margin-bottom: 0;
+                    }
+                    p{
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #fff;
+                    margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,175 @@
+.features_area{
+    position: relative;
+    margin-top: -150px;
+    padding-bottom: 0;
+    @media #{$mobile_device} {
+       margin-top: 30px;
+
+     }
+     &.add_padding{
+         margin-top: 0;
+         padding-bottom: 90px;
+         @media #{$mobile_device} {
+             padding-bottom: 50px;
+         }
+         @media #{$tablet_device} {
+             padding-bottom: 50px;
+         }
+     }
+    .single_feature{
+        margin-bottom: 30px;
+        background: #fff;
+        padding: 50px 30px 40px 30px;
+        @include transition(.3s);
+        .icon{
+            i{
+                font-size: 60px;
+                color: #F0542C;
+            }
+        }
+        h3{
+            font-size: 22px;
+            font-weight: 600;
+            color:#040E27;
+            margin-top: 8px;
+            margin-bottom: 18px;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            margin-bottom: 0;
+        }
+        &:hover{
+            @include box-shadow(0 10px 20px rgba(0, 0, 0, 0.05));
+        }
+    }
+}
+
+.project_details_banner{
+    background-image: url(../img/banner/project_details.png);
+    background-repeat: no-repeat;
+    height: 800px;
+    background-size: cover;
+    background-position: center center;
+    @media #{$mobile_device} {
+        height: 400px;
+    }
+    @media #{$tablet_device} {
+        height: 400px;
+    }
+}
+
+.project_details_info{
+    padding-top: 100px;
+    padding-bottom: 110px;
+    @media #{$mobile_device} {
+        padding: 40px 0; 
+    }
+    @media #{$tablet_device} {
+        padding: 40px 0; 
+    }
+
+    .details_left{
+        margin-bottom: 50px;
+        h3{
+            font-size: 42px;
+            font-weight: 600;
+            color: #040E27;
+            margin-bottom: 30px;
+            @media #{$tablet_device} {
+                font-size: 30px;
+                margin-bottom: 40px;
+            }
+        }
+        p{
+           font-size: 16px; 
+           line-height: 28px;
+           color: #596672;
+           margin-bottom: 25px;
+        }
+        &.details_header{
+            margin-bottom: 0;
+        }
+    }
+    .details_right{
+        margin-bottom: 60px;
+      .single_date{
+          margin-left: 20px;
+          margin-bottom: 27px;
+          @media #{$mobile_device} {
+            margin-right: 20px;
+            justify-content: space-between !important;
+          }
+          span{
+              text-transform: uppercase;
+              color: #EC7247;
+              font-weight: 500;
+              font-size: 13px;
+          }
+          p{
+              font-size: 16pxs;
+              color: #040E27;
+              margin-bottom: 0;
+              font-weight: 500;
+              margin-bottom: 0px;
+          }
+      }  
+      p{
+        font-size: 16px; 
+        line-height: 28px;
+        color: #596672;
+        margin-bottom: 25px;
+      }
+      &.details_header{
+        margin-bottom: 0;
+    }
+    }
+    .links{
+        text-align: center;
+        ul{
+            li{
+                display: inline-block;
+                a{
+                    background: #3B5997;
+                    display: inline-block;
+                    @include border-radius(4px);
+                    color: #fff;
+                    font-size: 14px;
+                    padding: 11px 28px;
+                    font-weight: 400;
+                    margin: 0 3px 10px 3px ;
+                    i{
+                        margin-right: 5px;
+                    }
+                }
+                &:nth-child(2) a{
+                    background: #1DA1F2;
+                }
+                &:nth-child(3) a{
+                    background: #B21D23;
+                }
+            }
+        }
+    }
+    .border_1px{
+        border-top: 1px solid #DEE0E3;
+        padding-top: 30px;
+    }
+}
+
+.details_header{
+    &.details_right{
+        @media #{$mobile_device} {
+            justify-content: start;
+            display: flex;
+        }
+
+        .single_date{
+            @media #{$mobile_device}{
+                margin-left: 0;
+            }
+           
+        }
+    }
+}
